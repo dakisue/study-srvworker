@@ -88,3 +88,24 @@ self.addEventListener('push', (event) => {
     );
 });
 
+Promise<void> showNotification(DOMString title, optional NotificationOptions options);
+
+dictionary NotificationOptions {
+  NotificationDirection dir = "auto";
+  DOMString lang = "";
+  DOMString body = "";
+  DOMString tag = "";
+  USVString icon;
+  USVString badge;
+  USVString sound;
+  VibratePattern vibrate;
+  DOMTimeStamp timestamp;
+  boolean renotify = false;
+  boolean silent = false;
+  boolean noscreen = false;
+  boolean requireInteraction = false;
+  boolean sticky = false;
+  any data = null;
+  sequence<NotificationAction> actions = [];
+};
+
