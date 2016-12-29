@@ -37,6 +37,7 @@ self.addEventListener('activate', (event) => {
     );
 });
 
+/*
 self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request)
@@ -70,4 +71,20 @@ self.addEventListener('fetch', (event) => {
                       });
               })
     );
+}); 
+*/
+
+self.addEventListener('push', (event) => {
+    console.info('push', event);
+
+    const message = event.data ? event.data.text() : '(・∀・)';
+
+    event.waitUntil(
+        self.registration.showNotification('Push Notification Title', {
+            body: message,
+            icon: 'https://kanatapple.github.io/service-worker/push/images/image.jpg',
+            tag: 'push-notification-tag'
+        })
+    );
 });
+
