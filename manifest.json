@@ -1,8 +1,1 @@
-{
-  "name": "SiteNameExample",
-  "short_name": "SiteNameExample",
-  "start_url": "/",
-  "display": "standalone",
-  "gcm_sender_id": "65782343874",
-  "gcm_user_visible_only": true
-}
+{"name": "iZooto Push Notification","short_name": "iZooto Notifier","icons": [{"src": "icon-192x192.png","sizes": "192x192"}],"start_url": "./index.html?homescreen=1","display": "standalone","gcm_sender_id": "894343437531"}
