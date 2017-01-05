@@ -3,6 +3,6 @@
   "short_name": "SiteNameExample",
   "start_url": "/",
   "display": "standalone",
-  "gcm_sender_id": "GOOGLE_PROJECT_ID",
+  "gcm_sender_id": "65782343874",
   "gcm_user_visible_only": true
 }
